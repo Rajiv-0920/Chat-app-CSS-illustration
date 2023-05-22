@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- JavaScript AOS Library CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome cdn path -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Attach CSS File  -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <section class="phone-container" data-aos="fade-right">
+        <header class="chat-header">
+          <i class="fa-solid fa-chevron-left exit-btn"></i>
+          <div class="user-img">
+            <img src="./images/avatar.jpg" alt="user-img" />
+          </div>
+          <div class="user-name">
+            <h5>Samuel Green</h5>
+            <p>Available to Walk</p>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical menu-btn"></i>
+        </header>
+        <div class="phone-body">
+          <div class="others-messages">
+            <p>That sounds great. I’d be happy to discuss more.</p>
+          </div>
+          <div class="others-messages">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
 
-  Samuel Green
-  Available to Walk
+          <div class="my-messages">
+            <div class="img-container">
+              <div class="img-box">
+                <img src="./images/dog-image-1.jpg" alt="dog images" />
+              </div>
+              <div class="img-box">
+                <img src="./images/dog-image-2.jpg" alt="dog images" />
+              </div>
+              <div class="img-box">
+                <img src="./images/dog-image-3.jpg" alt="dog images" />
+              </div>
+            </div>
+            <div class="my-text">
+              <p>Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="my-text">
+              <p>Can you make it?</p>
+            </div>
+          </div>
+          <div class="others-messages">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <div class="price-container">
+            <input type="radio" name="" id="input" />
+            <label for="radio" class="duration">30 minute walk</label>
+            <p class="price">$29</p>
+          </div>
+          <div class="price-container">
+            <input type="radio" name="" id="input" />
+            <label for="radio" class="duration">1 hour walk</label>
+            <p class="price">$49</p>
+          </div>
+          <div class="message-box">
+            <input
+              type="text"
+              name="message"
+              id="message"
+              placeholder="Type a message..."
+            />
+            <i class="fa-solid fa-chevron-right send-btn"></i>
+          </div>
+        </div>
+      </section>
+      <article class="main-description" data-aos="fade-left">
+        <h1>Simple booking</h1>
+        <p class="description">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </article>
+    </main>
 
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Rajiv-0920">Rajiv Kumar</a>.
+      </div>
+    </footer>
+    <!-- Import script, styles and initialize AOS: -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>
