@@ -32,7 +32,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   min-height: 100vh;
   line-height: calc(1em + 0.5rem);
@@ -61,7 +63,6 @@ body::after {
     var(--lightViolet)
   );
   z-index: -1;
-  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -78,7 +79,6 @@ body::before {
     hsla(264, 100%, 61%, 0.063)
   );
   z-index: -1;
-  overflow-x: hidden;
 }
 img {
   display: block;
@@ -278,6 +278,9 @@ footer {
   padding: 10px 0;
 }
 @media (min-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   body::after {
     left: -40px;
     max-width: 50%;
@@ -313,6 +316,9 @@ footer {
   }
 }
 @media (min-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
   body::after {
     left: -5%;
     width: 30%;
