@@ -61,6 +61,7 @@ body::after {
     var(--lightViolet)
   );
   z-index: -1;
+  overflow-x: hidden;
 }
 body::before {
   content: "";
@@ -77,6 +78,7 @@ body::before {
     hsla(264, 100%, 61%, 0.063)
   );
   z-index: -1;
+  overflow-x: hidden;
 }
 img {
   display: block;
